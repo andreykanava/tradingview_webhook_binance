@@ -1,0 +1,59 @@
+2022-08-27 11:27:20,391 Starting new HTTPS connection (1): fapi.binance.com:443
+2022-08-27 11:27:20,857 https://fapi.binance.com:443 "GET /fapi/v1/balance?timestamp=1661588840387&signature=edbc5aed6adfe31018485c12f659443aba383145544839512cbc58008fc7a71e HTTP/1.1" 200 None
+2022-08-27 11:27:21,884 https://fapi.binance.com:443 "GET /fapi/v1/balance?timestamp=1661588840862&signature=039d7004c51d3ad772c75b08d1786705c26fcbaf7d783b8d0de7976899a4bacf HTTP/1.1" 200 None
+2022-08-27 11:27:21,888 {'FTMUSDT': 0, 'ETHUSDT': 0, 'SOLUSDT': 0, 'ADAUSDT': 0, 'ETCUSDT': 0}
+2022-08-27 11:27:21,888 on_message has successfully been registered as an event
+2022-08-27 11:27:21,889 logging in using static token
+2022-08-27 11:27:22,290 GET https://discord.com/api/v7/users/@me with None has returned 200
+2022-08-27 11:27:22,290 GET https://discord.com/api/v7/users/@me has received {'id': '984746794158288927', 'username': 'TV Alert', 'avatar': 'e1b75ef8022cfa2030ea3bac4fd10926', 'avatar_decoration': None, 'discriminator': '4581', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+2022-08-27 11:27:22,393 GET https://discord.com/api/v7/gateway with None has returned 200
+2022-08-27 11:27:22,393 GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2022-08-27 11:27:22,802 Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2022-08-27 11:27:22,802 Dispatching event socket_raw_receive
+2022-08-27 11:27:22,803 For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-3p9r",{"micros":0.0}]']}}
+2022-08-27 11:27:22,803 Dispatching event socket_response
+2022-08-27 11:27:22,803 Dispatching event socket_raw_send
+2022-08-27 11:27:22,804 Dispatching event socket_raw_send
+2022-08-27 11:27:22,804 Shard ID None has sent the IDENTIFY payload.
+2022-08-27 11:27:23,007 Dispatching event socket_raw_receive
+2022-08-27 11:27:23,007 For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-08-27 11:27:23,007 Dispatching event socket_response
+2022-08-27 11:27:23,109 Dispatching event socket_raw_receive
+2022-08-27 11:27:23,109 For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'TV Alert', 'mfa_enabled': False, 'id': '984746794158288927', 'flags': 0, 'email': None, 'discriminator': '4581', 'bot': True, 'avatar': 'e1b75ef8022cfa2030ea3bac4fd10926'}, 'session_type': 'normal', 'session_id': '7dede952d1b3591002a86439431f536e', 'resume_gateway_url': 'wss://gateway.discord.gg/', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '1009370634083635210'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['bucharest', 'russia', 'st-pete', 'finland', 'stockholm'], 'audio_context_settings': {}, 'application': {'id': '984746794158288927', 'flags': 827392}, '_trace': ['["gateway-prd-main-3p9r",{"micros":107626,"calls":["id_created",{"micros":501,"calls":[]},"session_lookup_time",{"micros":440,"calls":[]},"session_lookup_finished",{"micros":18,"calls":[]},"discord-sessions-green-prd-2-30",{"micros":106273,"calls":["start_session",{"micros":38678,"calls":["discord-api-5dc44cfc8f-n9wzt",{"micros":34351,"calls":["get_user",{"micros":8418},"get_guilds",{"micros":4124},"send_scheduled_deletion_message",{"micros":12},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":14}]}]},"starting_guild_connect",{"micros":30,"calls":[]},"presence_started",{"micros":31161,"calls":[]},"guilds_started",{"micros":14817,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":21545,"calls":[]},"connect_finished",{"micros":21550,"calls":[]},"build_ready",{"micros":4,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]},"clean_ready",{"micros":0,"calls":[]}]}]}]']}}
+2022-08-27 11:27:23,109 Dispatching event socket_response
+2022-08-27 11:27:23,109 Shard ID None has connected to Gateway: ["gateway-prd-main-3p9r",{"micros":107626,"calls":["id_created",{"micros":501,"calls":[]},"session_lookup_time",{"micros":440,"calls":[]},"session_lookup_finished",{"micros":18,"calls":[]},"discord-sessions-green-prd-2-30",{"micros":106273,"calls":["start_session",{"micros":38678,"calls":["discord-api-5dc44cfc8f-n9wzt",{"micros":34351,"calls":["get_user",{"micros":8418},"get_guilds",{"micros":4124},"send_scheduled_deletion_message",{"micros":12},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":14}]}]},"starting_guild_connect",{"micros":30,"calls":[]},"presence_started",{"micros":31161,"calls":[]},"guilds_started",{"micros":14817,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":21545,"calls":[]},"connect_finished",{"micros":21550,"calls":[]},"build_ready",{"micros":4,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]},"clean_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 7dede952d1b3591002a86439431f536e).
+2022-08-27 11:27:23,149 Dispatching event connect
+2022-08-27 11:27:23,150 Dispatching event socket_raw_receive
+2022-08-27 11:27:23,150 For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'unavailable': False, 'name': 'Сервер xian', 'members': [{'user': {'username': 'TV Alert', 'public_flags': 0, 'id': '984746794158288927', 'discriminator': '4581', 'bot': True, 'avatar': 'e1b75ef8022cfa2030ea3bac4fd10926'}, 'roles': ['1009373521887105117'], 'premium_since': None, 'pending': False, 'nick': 'Привод', 'mute': False, 'joined_at': '2022-08-17T08:10:00.956000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}], 'verification_level': 0, 'nsfw_level': 0, 'premium_subscription_count': 0, 'premium_progress_bar_enabled': False, 'member_count': 3, 'embedded_activities': [], 'stickers': [], 'presences': [], 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Текстовые каналы', 'id': '1009370634083635211', 'flags': 0}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 2, 'permission_overwrites': [], 'parent_id': '1009370634083635211', 'name': 'commands', 'last_message_id': '1011891825495253042', 'id': '1009370701448351835', 'flags': 0}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '1009370634083635211', 'name': 'signal', 'last_message_id': '1012874136793649152', 'id': '1009370759979868260', 'flags': 0}], 'discovery_splash': None, 'max_stage_video_channel_users': 0, 'voice_states': [], 'mfa_level': 0, 'max_members': 500000, 'icon': None, 'default_message_notifications': 0, 'stage_instances': [], 'features': [], 'premium_tier': 0, 'owner_id': '498547529374498849', 'region': 'deprecated', 'roles': [{'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1009370634083635210', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'unicode_emoji': None, 'tags': {'bot_id': '984746794158288927'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'Привод', 'mentionable': False, 'managed': True, 'id': '1009373521887105117', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}], 'nsfw': False, 'guild_scheduled_events': [], 'emojis': [], 'explicit_content_filter': 0, 'application_id': None, 'afk_timeout': 300, 'public_updates_channel_id': None, 'system_channel_id': None, 'threads': [], 'max_video_channel_users': 25, 'joined_at': '2022-08-17T08:10:00.956000+00:00', 'vanity_url_code': None, 'application_command_counts': {}, 'banner': None, 'id': '1009370634083635210', 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': 'SA/c0A'}, 'metadata': {'omitted': False, 'hash': 'n+W0Kw'}, 'channels': {'omitted': False, 'hash': 'QIWoOA'}}, 'afk_channel_id': None, 'large': False, 'lazy': True, 'description': None, 'hub_type': None, 'splash': None, 'preferred_locale': 'en-US', 'system_channel_flags': 0, 'rules_channel_id': None}}
+2022-08-27 11:27:23,150 Dispatching event socket_response
+2022-08-27 11:27:23,151 Dispatching event socket_raw_send
+2022-08-27 11:27:23,313 Dispatching event socket_raw_receive
+2022-08-27 11:27:23,314 For Shard ID None: WebSocket Event: {'t': 'GUILD_MEMBERS_CHUNK', 's': 3, 'op': 0, 'd': {'nonce': 'ea0d22923a2004497ee4d55416c56e83', 'members': [{'user': {'username': 'xian', 'public_flags': 0, 'id': '498547529374498849', 'discriminator': '0464', 'bot': False, 'avatar': '392b66270f347b5e475a06eb776bd592'}, 'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2022-08-17T07:58:32.376000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}, {'user': {'username': 'Shark1et', 'public_flags': 128, 'id': '683664775250575463', 'discriminator': '2817', 'bot': False, 'avatar': '645a325a4c41ba13f2d43aba2f976714'}, 'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2022-08-17T08:03:59.675000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}, {'user': {'username': 'TV Alert', 'public_flags': 0, 'id': '984746794158288927', 'discriminator': '4581', 'bot': True, 'avatar': 'e1b75ef8022cfa2030ea3bac4fd10926'}, 'roles': ['1009373521887105117'], 'premium_since': None, 'pending': False, 'nick': 'Привод', 'mute': False, 'joined_at': '2022-08-17T08:10:00.956000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}], 'guild_id': '1009370634083635210', 'chunk_index': 0, 'chunk_count': 1}}
+2022-08-27 11:27:23,314 Dispatching event socket_response
+2022-08-27 11:27:23,314 Processed a chunk for 3 members in guild ID 1009370634083635210.
+2022-08-27 11:27:25,154 Dispatching event guild_available
+2022-08-27 11:27:25,154 Dispatching event ready
+2022-08-27 11:28:04,054 Keeping shard ID None websocket alive with sequence 3.
+2022-08-27 11:28:04,196 Dispatching event socket_raw_receive
+2022-08-27 11:28:04,197 For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-08-27 11:28:04,197 Dispatching event socket_response
+2022-08-27 11:28:45,312 Keeping shard ID None websocket alive with sequence 3.
+2022-08-27 11:28:45,451 Dispatching event socket_raw_receive
+2022-08-27 11:28:45,451 For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-08-27 11:28:45,451 Dispatching event socket_response
+2022-08-27 11:29:26,569 Keeping shard ID None websocket alive with sequence 3.
+2022-08-27 11:29:26,708 Dispatching event socket_raw_receive
+2022-08-27 11:29:26,709 For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-08-27 11:29:26,709 Dispatching event socket_response
+2022-08-27 11:30:07,820 Keeping shard ID None websocket alive with sequence 3.
+2022-08-27 11:30:07,973 Dispatching event socket_raw_receive
+2022-08-27 11:30:07,974 For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-08-27 11:30:07,974 Dispatching event socket_response
+2022-08-27 11:30:49,071 Keeping shard ID None websocket alive with sequence 3.
+2022-08-27 11:30:49,241 Dispatching event socket_raw_receive
+2022-08-27 11:30:49,241 For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-08-27 11:30:49,241 Dispatching event socket_response
+2022-08-27 11:31:07,951 Cleaning up tasks.
+2022-08-27 11:31:07,951 Cleaning up after 1 tasks.
+2022-08-27 11:31:07,952 All tasks finished cancelling.
+2022-08-27 11:31:07,953 Closing the event loop.
