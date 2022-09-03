@@ -143,42 +143,36 @@ async def on_message(ctx):
                             stop = client.futures_create_order(symbol=symbol, side="SELL", type="STOP_MARKET", stopPrice=stop_price, closePosition="true")
                         await asyncio.sleep(60)
                     else:
-                        orders = client.futures_get_open_orders(symbol=symbol)
                         try:
-                            if orders[0]['type'] == 'STOP_MARKET':
-                                channel = DS.get_channel(1009370759979868260)
-                                logging.debug(orders)
-                                client.futures_cancel_order(symbol=symbol, orderId=stop['orderId'], timestamp='true')
-                                await channel.send(content=f":dollar:Позиция на монету {symbol} закрыта по тейк-профиту!:dollar:")
-                                take_orders = take_orders + 1
-                                opened_orders = opened_orders - 1
-                                d1 = startbal*info.laverage
-                                d2 = takep/price
-                                d3 = d2 - 1
-                                d4 = d1 * d3
-                                d5 = d4 + startbal - 0.1
-                                trading_bal[symbol] = d5
-
-                                a = False
-                            elif orders[0]['type'] == 'TAKE_PROFIT_MARKET':
-                                channel = DS.get_channel(1009370759979868260)
-                                logging.debug(orders)
-                                client.futures_cancel_order(symbol=symbol, orderId=take['orderId'], timestamp='true')
-                                await channel.send(content=f":red_circle:Позиция на монету {symbol} закрыта по стоп-лоссу!:red_circle:")
-                                stop_orders = stop_orders + 1
-                                opened_orders = opened_orders + 1
-                                d1 = startbal * info.laverage
-                                d2 = stopl/price
-                                d3 = d2 - 1
-                                d4 = d3 * -100
-                                d5 = d4/100
-                                d6 = d1 * d5
-                                d7 = startbal - d6 - 0.1
-                                trading_bal[symbol] = d7
-
-                                a = False
+                            client.futures_cancel_order(symbol=symbol, orderId=stop['orderId'], timestamp='true')
+                            channel = DS.get_channel(1009370759979868260)
+                            logging.debug(orders)
+                            await channel.send(content=f":dollar:Позиция на монету {symbol} закрыта по тейк-профиту!:dollar:")
+                            take_orders = take_orders + 1
+                            opened_orders = opened_orders - 1
+                            d1 = startbal*info.laverage
+                            d2 = takep/price
+                            d3 = d2 - 1
+                            d4 = d1 * d3
+                            d5 = d4 + startbal - 0.1
+                            trading_bal[symbol] = d5
+                            a = False
                         except:
-                            continue
+                            client.futures_cancel_order(symbol=symbol, orderId=take['orderId'], timestamp='true')
+                            channel = DS.get_channel(1009370759979868260)
+                            logging.debug(orders)
+                            await channel.send(content=f":red_circle:Позиция на монету {symbol} закрыта по стоп-лоссу!:red_circle:")
+                            stop_orders = stop_orders + 1
+                            opened_orders = opened_orders + 1
+                            d1 = startbal * info.laverage
+                            d2 = stopl/price
+                            d3 = d2 - 1
+                            d4 = d3 * -100
+                            d5 = d4/100
+                            d6 = d1 * d5
+                            d7 = startbal - d6 - 0.1
+                            trading_bal[symbol] = d7
+                            a = False
 
 
             elif side == "SELL" and client.futures_get_open_orders(symbol=symbol) == []:
