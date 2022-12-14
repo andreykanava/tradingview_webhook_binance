@@ -20,7 +20,7 @@ def get_pricesize(symbol):
     info = client.futures_exchange_info()
     for item in info['symbols']:
         if(item['symbol'] == symbol):
-            for f in item['filter']:
+            for f in item['filters']:
                 if f['filterType'] == 'PRICE_FILTER':
                     return f['tickSize']
 
